@@ -1,2 +1,0 @@
-# KhoGameViet
-KhoGame - Chất Lượng
