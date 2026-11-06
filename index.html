@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#080810" />
+    <meta name="description" content="Khám phá tuyển tập game iOS nổi bật, thông tin cập nhật và hướng dẫn cài đặt tại KHO GAME iOS VIP PRO MAX." />
+    <meta property="og:title" content="KHO GAME iOS — Your Ultimate iOS Gaming Destination" />
+    <meta property="og:description" content="Khám phá những tựa game iOS đáng chơi tiếp theo của bạn." />
+    <title>KHO GAME iOS — Your Ultimate iOS Gaming Destination</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-one" aria-hidden="true"></div>
+    <div class="page-glow page-glow-two" aria-hidden="true"></div>
+    <div class="loading-screen" id="loadingScreen" aria-label="Đang tải">
+      <div class="loader-mark">K<span>G</span></div>
+      <div class="loader-line"><i></i></div>
+      <p>ĐANG MỞ CỔNG GAME</p>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="KHO GAME iOS trang chủ">
+        <span class="brand-symbol">K<span>G</span></span>
+        <span class="brand-copy"><strong>KHO GAME <em>iOS</em></strong><small>YOUR NEXT LEVEL STARTS HERE</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <a class="nav-link active" href="#home">Trang chủ</a>
+        <a class="nav-link" href="#trending">Thịnh hành</a>
+        <a class="nav-link" href="#catalog">Khám phá</a>
+        <a class="nav-link" href="#categories">Thể loại</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" id="searchToggle" aria-label="Tìm kiếm">⌕</button>
+        <button class="login-button" id="loginButton"><span class="user-icon">◉</span><span>Tài khoản</span></button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero shell" aria-labelledby="heroTitle">
+        <div class="hero-backdrop" aria-hidden="true"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-grid"></div><div class="hero-art"><span class="art-spark spark-a">✦</span><span class="art-spark spark-b">✧</span><div class="art-core">影</div><div class="art-ring"></div><div class="art-caption">NEW REALM<br /><b>AWAITING</b></div></div></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="live-dot"></span> TUYỂN CHỌN DÀNH RIÊNG CHO iOS</div>
+          <h1 id="heroTitle">Chạm vào<br />một <span>thế giới</span><br />khác.</h1>
+          <p class="hero-description">Khám phá những tựa game đáng chơi nhất. Chọn cuộc phiêu lưu tiếp theo của bạn ngay hôm nay.</p>
+          <div class="hero-buttons"><a class="button button-primary" href="#catalog">Khám phá kho game <span>↗</span></a><a class="button button-quiet" href="#trending"><span class="play-icon">▶</span> Đang thịnh hành</a></div>
+          <div class="hero-footnote"><div class="avatar-stack"><span>🎮</span><span>⚔️</span><span>🚀</span></div><span><b>Game thủ iOS</b><br />luôn có thứ mới để chơi</span></div>
+        </div>
+        <div class="hero-index"><span>01</span><i></i><span>03</span></div>
+      </section>
+
+      <section class="stats-strip shell" aria-label="Tổng quan kho game">
+        <div class="stat-item"><span class="stat-icon">◈</span><div><strong>CURATED</strong><small>Chọn lọc kỹ lưỡng</small></div></div>
+        <div class="stat-item"><span class="stat-icon">✦</span><div><strong>iOS FIRST</strong><small>Tối ưu trải nghiệm iPhone</small></div></div>
+        <div class="stat-item"><span class="stat-icon">↗</span><div><strong>ALWAYS FRESH</strong><small>Cập nhật xu hướng mới</small></div></div>
+        <div class="stat-note"><span class="live-dot"></span> YOUR ULTIMATE iOS GAMING DESTINATION</div>
+      </section>
+
+      <section class="section shell" id="trending">
+        <div class="section-heading"><div><div class="eyebrow section-kicker">ĐƯỢC CỘNG ĐỒNG YÊU THÍCH</div><h2>Đang <span>thịnh hành</span></h2><p>Những thế giới đang khiến game thủ không thể rời mắt.</p></div><a class="text-link" href="#catalog">Khám phá tất cả <span>↗</span></a></div>
+        <div class="game-grid trending-grid" id="trendingGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="category-band" id="categories">
+        <div class="shell category-inner"><div><div class="eyebrow section-kicker">CHỌN PHONG CÁCH CỦA BẠN</div><h2>Một kho game.<br /><span>Vô vàn cuộc chơi.</span></h2></div><div class="category-chips" id="categoryChips" aria-label="Lọc theo thể loại"></div></div>
+      </section>
+
+      <section class="section shell catalog-section" id="catalog">
+        <div class="section-heading catalog-heading"><div><div class="eyebrow section-kicker">BẮT ĐẦU CUỘC PHIÊU LƯU</div><h2>Khám phá <span>game</span></h2><p>Tìm tựa game hợp gu, rồi sẵn sàng lên cấp.</p></div><div class="catalog-controls"><label class="search-box" for="gameSearch"><span>⌕</span><input id="gameSearch" type="search" placeholder="Tên game, thể loại, studio..." autocomplete="off" /><kbd>⌘ K</kbd></label><label class="sort-label" for="sortSelect">Sắp xếp<select id="sortSelect"><option value="featured">Nổi bật</option><option value="rating">Đánh giá cao</option><option value="downloads">Phổ biến</option><option value="newest">Mới cập nhật</option></select></label></div></div>
+        <div class="filter-row"><div class="filter-chips" id="filterChips"></div><button class="clear-filter" id="clearFilter">Xóa bộ lọc <span>↺</span></button></div>
+        <div class="results-label" id="resultsLabel"></div>
+        <div class="game-grid catalog-grid" id="catalogGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Chưa tìm thấy game phù hợp</h3><p>Thử từ khóa khác hoặc bỏ bớt bộ lọc nhé.</p><button class="button button-outline" id="resetSearch">Xóa tìm kiếm</button></div>
+      </section>
+
+      <section class="editorial shell"><div class="editorial-card"><div class="editorial-content"><div class="eyebrow">THE iOS GAMING JOURNAL · 001</div><h2>Không chỉ là<br />một trò chơi.</h2><p>Đó là cánh cửa dẫn đến những cuộc phiêu lưu, những chiến thắng và những thế giới mới nằm gọn trong lòng bàn tay.</p><a class="text-link" href="#catalog">Tìm cuộc chơi tiếp theo <span>↗</span></a></div><div class="editorial-art" aria-hidden="true"><div class="editorial-sun"></div><div class="editorial-mountain mountain-back"></div><div class="editorial-mountain mountain-front"></div><span>PRESS START</span></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-main"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-symbol">K<span>G</span></span><span class="brand-copy"><strong>KHO GAME <em>iOS</em></strong><small>YOUR NEXT LEVEL STARTS HERE</small></span></a><p>Your Ultimate iOS Gaming Destination.<br />Tìm game hay. Mở thế giới mới.</p></div><div class="footer-links"><div><b>KHÁM PHÁ</b><a href="#trending">Thịnh hành</a><a href="#catalog">Tất cả game</a><a href="#categories">Thể loại</a></div><div><b>THÔNG TIN</b><a href="#about">Giới thiệu</a><a href="mailto:hello@khogameios.example">Liên hệ</a><a href="#policy">Chính sách</a><a href="#admin" id="adminButton">Quản trị</a></div><div><b>CỘNG ĐỒNG</b><a href="#discord">Discord ↗</a><a href="#telegram">Telegram ↗</a><a href="#facebook">Facebook ↗</a></div></div></div><div class="shell footer-bottom"><span>© 2025 KHO GAME iOS. Thiết kế dành cho game thủ.</span><span>Chỉ liên kết tới nội dung được phép phân phối.</span><a href="#home">LÊN ĐẦU ↑</a></div></footer>
+
+    <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" id="modalContent" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Đóng">×</button><div id="modalBody"></div></section></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

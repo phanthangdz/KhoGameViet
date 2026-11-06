@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090910" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin Control Panel — KHO GAME iOS</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-loading" id="adminLoading"><span class="spinner"></span><p>ĐANG KIỂM TRA PHIÊN QUẢN TRỊ</p></div>
+  <section class="gate" id="adminGate" hidden>
+    <div class="gate-card"><div class="brand-mark">KG<span>·</span></div><p class="kicker">KHO GAME iOS · SECURITY GATE</p><h1 id="gateTitle">Không thể truy cập</h1><p id="gateMessage">Đang xác minh tài khoản với Supabase.</p><a class="admin-button primary" href="index.html">Về trang chủ</a></div>
+  </section>
+  <div class="admin-layout" id="adminLayout" hidden>
+    <aside class="sidebar" id="adminSidebar">
+      <a class="admin-brand" href="index.html"><span class="brand-mark">KG<span>·</span></span><span><b>KHO GAME iOS</b><small>ADMIN CONTROL PANEL</small></span></a>
+      <nav class="side-nav" aria-label="Admin navigation">
+        <button class="side-link active" data-page="dashboard"><span>▦</span>Dashboard</button>
+        <button class="side-link" data-page="games"><span>🎮</span>Quản lý Game</button>
+        <button class="side-link" data-page="categories"><span>▤</span>Danh mục Game</button>
+        <button class="side-link" data-page="users"><span>♙</span>Người dùng</button>
+        <button class="side-link" data-page="downloads"><span>⇩</span>Quản lý lượt tải</button>
+        <button class="side-link" data-page="featured"><span>★</span>Game nổi bật</button>
+        <button class="side-link" data-page="banners"><span>▧</span>Banner & Giao diện</button>
+        <button class="side-link" data-page="notifications"><span>◉</span>Thông báo</button>
+        <button class="side-link" data-page="comments"><span>▱</span>Bình luận & Đánh giá</button>
+        <button class="side-link" data-page="stats"><span>⌁</span>Thống kê</button>
+        <button class="side-link" data-page="roles"><span>♢</span>Phân quyền Admin</button>
+        <button class="side-link" data-page="settings"><span>⚙</span>Cài đặt Website</button>
+        <button class="side-link" data-page="logs"><span>◷</span>Nhật ký hoạt động</button>
+      </nav>
+      <div class="sidebar-bottom"><span class="online-dot"></span><span>RLS AUTHENTICATED</span></div>
+    </aside>
+    <main class="admin-main">
+      <header class="topbar"><button class="mobile-menu" id="sidebarToggle" aria-label="Mở menu">☰</button><div><p class="kicker">KHO GAME iOS / ADMIN</p><h1 id="pageTitle">Dashboard</h1></div><div class="admin-profile"><span class="avatar" id="adminAvatar">A</span><span class="profile-copy"><b id="adminEmail">Admin</b><small>Quản trị viên</small></span><button class="admin-button subtle" id="signOutButton">Đăng xuất</button></div></header>
+      <div class="notice-bar" id="adminNotice" hidden></div>
+      <div class="page-content" id="pageContent"><div class="skeleton-row"></div><div class="skeleton-row"></div></div>
+    </main>
+  </div>
+  <div class="admin-toast" id="adminToast" role="status" aria-live="polite"></div>
+  <dialog class="editor-dialog" id="editorDialog"><form id="editorForm"><div class="dialog-head"><div><p class="kicker">ADMIN EDITOR</p><h2 id="editorTitle">Thêm mới</h2></div><button type="button" class="close-dialog" id="closeEditor" aria-label="Đóng">×</button></div><div id="editorFields" class="editor-fields"></div><div class="dialog-actions"><button type="button" class="admin-button subtle" id="cancelEditor">Hủy</button><button class="admin-button primary" type="submit" id="saveEditor">Lưu thay đổi</button></div></form></dialog>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
